@@ -9,7 +9,7 @@ class CallsItemHelper {
         false),
     CallsItemModel(
         "https://pbs.twimg.com/profile_images/916384996092448768/PF1TSFOE_400x400.jpg",
-        "Poune",
+        "pooneh",
         "Today, 10:14",
         false),
     CallsItemModel(
@@ -19,7 +19,7 @@ class CallsItemHelper {
         true),
     CallsItemModel(
         "https://pbs.twimg.com/profile_images/916384996092448768/PF1TSFOE_400x400.jpg",
-        "Poune",
+        "pooneh",
         "19 May, 22:17",
         false),
     CallsItemModel(

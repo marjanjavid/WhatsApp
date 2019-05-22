@@ -4,7 +4,7 @@ class StatusItemHelper {
   static var statusList = [
     StatusItemModel(
         "https://pbs.twimg.com/profile_images/916384996092448768/PF1TSFOE_400x400.jpg",
-        "Poune",
+        "pooneh",
         "Yesterday, 11:21 PM"),
     StatusItemModel(
         "https://image.shutterstock.com/image-photo/face-blonde-happy-bride-before-450w-546759520.jpg",

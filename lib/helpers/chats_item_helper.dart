@@ -4,7 +4,7 @@ class ChatsItemHelper {
   static var chatList = [
     ChatsItemModel(
         "https://pbs.twimg.com/profile_images/916384996092448768/PF1TSFOE_400x400.jpg",
-        "Poune",
+        "pooneh",
         "Yesterday",
         "How are u?"),
     ChatsItemModel(
@@ -14,7 +14,7 @@ class ChatsItemHelper {
         "Hello"),
     ChatsItemModel(
         "https://pbs.twimg.com/profile_images/916384996092448768/PF1TSFOE_400x400.jpg",
-        "Poune",
+        "pooneh",
         "16/07/2018",
         "How are u?"),
     ChatsItemModel(
@@ -24,7 +24,7 @@ class ChatsItemHelper {
         "Hello"),
     ChatsItemModel(
         "https://pbs.twimg.com/profile_images/916384996092448768/PF1TSFOE_400x400.jpg",
-        "Poune",
+        "pooneh",
         "16/07/2018",
         "How are u?"),
     ChatsItemModel(
@@ -34,7 +34,7 @@ class ChatsItemHelper {
         "Hello"),
     ChatsItemModel(
         "https://pbs.twimg.com/profile_images/916384996092448768/PF1TSFOE_400x400.jpg",
-        "Poune",
+        "pooneh",
         "16/07/2018",
         "How are u?"),
     ChatsItemModel(

@@ -5,7 +5,7 @@ import 'package:whatsapp/Views/camera_view.dart';
 import 'package:whatsapp/Views/chats_view.dart';
 
 class HomePage extends StatelessWidget {
-  final Color whatsAppGreen = Color.fromRGBO(18, 140, 126, 1.0);
+  final Color whatsAppGreen = Colors.teal[800];
   final Color whatsAppGreenLight = Color.fromRGBO(37, 211, 102, 1.0);
 
   final Text whatsAppTitle = Text(

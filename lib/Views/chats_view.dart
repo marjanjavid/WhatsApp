@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:whatsapp/models/chats_item_model.dart';
 import 'package:whatsapp/helpers/chats_item_helper.dart';
-// import 'package:whatsapp/Views/chatdetail_view.dart';
+import 'package:whatsapp/Views/chatdetail_view.dart';
 
 class ChatsView extends StatelessWidget {
   @override
@@ -10,33 +10,32 @@ class ChatsView extends StatelessWidget {
         itemCount: ChatsItemHelper.itemCount,
         itemBuilder: (context, index) {
           ChatsItemModel chatItemModel = ChatsItemHelper.getChatItem(index);
-          // return new GestureDetector(
-          //     onTap: () {
-          //       Navigator.push(
-          //       context,
-          //       MaterialPageRoute(
-          //         builder: (context) => ChatDetailView(),
-          //       ),
-          //     );
-          //     },
-          //     child: Column(
-          return Column(
-            children: <Widget>[
-              Padding(
-                padding: const EdgeInsets.only(right: 8.0, left: 8.0),
-                child: Row(
-                  children: <Widget>[
-                    showProfileImage(chatItemModel.profileAddress),
-                    showItemPreView(chatItemModel)
-                  ],
-                ),
-              ),
-              Divider(
-                color: Colors.grey[400],
-                indent: 50,
-              )
-            ],
-          );
+          return new InkWell(
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => ChatDetailView( chatItem: chatItemModel),
+                  ),
+                );
+              },
+              child: Column(
+                children: <Widget>[
+                  Padding(
+                    padding: const EdgeInsets.only(right: 8.0, left: 8.0),
+                    child: Row(
+                      children: <Widget>[
+                        showProfileImage(chatItemModel.avatar),
+                        showItemPreView(chatItemModel)
+                      ],
+                    ),
+                  ),
+                  Divider(
+                    color: Colors.grey[400],
+                    indent: 50,
+                  )
+                ],
+              ));
         });
   }
 
@@ -72,7 +71,7 @@ class ChatsView extends StatelessWidget {
     ));
   }
 
-  Container showProfileImage(String profileAddress) {
+  Container showProfileImage(String avatar) {
     return new Container(
       height: 50.0,
       width: 50.0,
@@ -80,7 +79,7 @@ class ChatsView extends StatelessWidget {
         shape: BoxShape.circle,
         image: new DecorationImage(
           fit: BoxFit.fill,
-          image: new NetworkImage(profileAddress),
+          image: new NetworkImage(avatar),
         ),
       ),
     );
