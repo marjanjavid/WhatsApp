@@ -7,8 +7,8 @@ class ChatHistoryHelper {
     ChatHistoryModel(fromMySelf: false, message: "che khabar?", chatID: 1),
     ChatHistoryModel(fromMySelf: true, message: "merci", chatID: 1),
     ChatHistoryModel(fromMySelf: true, message: "salam", chatID: 2),
-    ChatHistoryModel(fromMySelf: false, message: "salam khubi?", chatID: 2),
-    ChatHistoryModel(fromMySelf: false, message: "che khabar?", chatID: 2),
+    ChatHistoryModel(fromMySelf: false, message: "khubi che khabara?", chatID: 2),
+    ChatHistoryModel(fromMySelf: false, message: "che kar mikoni?", chatID: 2),
     ChatHistoryModel(fromMySelf: true, message: "merci", chatID: 2),
   ];
   static List<ChatHistoryModel> getChatMessages(int chatID) {

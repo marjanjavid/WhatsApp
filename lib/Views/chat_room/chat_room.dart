@@ -5,11 +5,11 @@ import 'package:whatsapp/Views/chat_room/chat_send_message.dart';
 import 'package:whatsapp/models/chat_history_model.dart';
 import 'package:whatsapp/helpers/chat_history_helper.dart';
 
-class ChatDetailView extends StatelessWidget {
+class ChatRoom extends StatelessWidget {
   final ChatsItemModel chatItem;
   final Color whatsAppGreen = Colors.teal[800];
 
-  ChatDetailView({@required this.chatItem});
+  ChatRoom({@required this.chatItem});
 
   Widget _buildMessageDisplay(int chatId) {
     List<ChatHistoryModel> _chatHistory =
@@ -19,14 +19,34 @@ class ChatDetailView extends StatelessWidget {
       //reverse: true,
       itemBuilder: (context, index) {
         //final ct = _chatHistory.reversed.toList()[index];
-        final ct = _chatHistory.toList()[index];
-        return Column(
-          children: <Widget>[
-            SizedBox(
-              height: 8.0,
-            ),
-            Text(ct.message),
-          ],
+        final msg = _chatHistory.toList()[index];
+
+        return Container(
+          padding: EdgeInsets.symmetric(horizontal: 8.0),
+          child: Row(
+            mainAxisAlignment: msg.fromMySelf
+                ? MainAxisAlignment.end
+                : MainAxisAlignment.start,
+            children: <Widget>[
+              Card(
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(8.0),
+              ),
+                child: Padding(
+                  padding: EdgeInsets.all(7.0),
+                  child: Text(
+                    msg.message,
+                    style:
+                        TextStyle(fontWeight: FontWeight.w400, fontSize: 16.0),
+                  ),
+                ),
+                //decoration: new BoxDecoration(
+                color: msg.fromMySelf ? Color(0xFFdcf8c6) : Colors.white,
+                // borderRadius:  BorderRadius.all(Radius.circular(8.0))
+                // )
+              ),
+            ],
+          ),
         );
       },
     );
