@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:whatsapp/models/chats_item_model.dart';
 import 'package:whatsapp/helpers/chats_item_helper.dart';
-import 'package:whatsapp/Views/chatdetail_view.dart';
+import 'package:whatsapp/Views/chat_room/chat_room.dart';
 
 class ChatsView extends StatelessWidget {
   @override
