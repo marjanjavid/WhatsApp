@@ -13,7 +13,7 @@ class CallsView extends StatelessWidget {
           return Column(
             children: <Widget>[
               Padding(
-                padding: const EdgeInsets.only(right: 8.0,left:8.0),
+                padding: const EdgeInsets.only(right: 8.0, left: 8.0),
                 child: Row(
                   children: <Widget>[
                     showProfileImage(callItemModel.profileAddress),
@@ -21,7 +21,10 @@ class CallsView extends StatelessWidget {
                   ],
                 ),
               ),
-              Divider(color: Colors.grey[400] , indent: 50 ,)
+              Divider(
+                color: Colors.grey[400],
+                indent: 50,
+              )
             ],
           );
         });

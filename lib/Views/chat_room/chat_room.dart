@@ -29,9 +29,9 @@ class ChatRoom extends StatelessWidget {
                 : MainAxisAlignment.start,
             children: <Widget>[
               Card(
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(8.0),
-              ),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(8.0),
+                ),
                 child: Padding(
                   padding: EdgeInsets.all(7.0),
                   child: Text(

@@ -6,26 +6,30 @@ class StatusView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
-      itemCount: StatusItemHelper.itemCount,
-      itemBuilder: (context, index) {
-      StatusItemModel statusItemModel = StatusItemHelper.getStatusItem(index);
+        itemCount: StatusItemHelper.itemCount,
+        itemBuilder: (context, index) {
+          StatusItemModel statusItemModel =
+              StatusItemHelper.getStatusItem(index);
 
-      return Column(
-        children: <Widget>[
-          Padding(
-                padding: const EdgeInsets.only(right: 8.0,left:8.0),
-            child: Row(
-              children: <Widget>[
-                showProfileImage(statusItemModel.profileAddress),
-                showItemPreView(statusItemModel.name, statusItemModel.dateTime)
-              ],
-            ),
-          ),
-          Divider(color: Colors.grey[400] , indent: 50 ,)
-
-        ],
-      );
-    });
+          return Column(
+            children: <Widget>[
+              Padding(
+                padding: const EdgeInsets.only(right: 8.0, left: 8.0),
+                child: Row(
+                  children: <Widget>[
+                    showProfileImage(statusItemModel.profileAddress),
+                    showItemPreView(
+                        statusItemModel.name, statusItemModel.dateTime)
+                  ],
+                ),
+              ),
+              Divider(
+                color: Colors.grey[400],
+                indent: 50,
+              )
+            ],
+          );
+        });
   }
 
   Expanded showItemPreView(String name, String dateTime) {

@@ -21,7 +21,6 @@ class HomePage extends StatelessWidget {
       Tab(child: Text("STATUS")),
       Tab(child: Text("CALLS")),
     ],
-    
   );
 
   final List<Widget> whatsAppActions = <Widget>[
@@ -58,8 +57,7 @@ class HomePage extends StatelessWidget {
             onPressed: () {},
             child: Icon(Icons.message),
             backgroundColor: whatsAppGreenLight,
-          )
-          ),
+          )),
     );
   }
 }

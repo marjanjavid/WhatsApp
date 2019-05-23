@@ -9,7 +9,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'WhatsApp',
-      theme: ThemeData(        
+      theme: ThemeData(
         primarySwatch: Colors.blue,
         primaryIconTheme: IconThemeData(color: Colors.white),
       ),
@@ -17,5 +17,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
- 
